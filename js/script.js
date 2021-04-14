@@ -55,6 +55,11 @@ $(document).ready(function () {
         }
     })
 
+    // delete item
+    $("body").on("click", ".foglio i",function(){
+        $(this).parent("li").remove();
+    })
+
     
 
 
