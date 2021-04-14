@@ -1,0 +1,109 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    color: #0e172c;
+}
+
+main{
+    height: 100vh;
+    background-image: url("../img/workplace-2303851_960_720.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* UTILITIES */
+.container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+/* SX SECTION */
+.sx-section{
+    height: 100vh;
+    width: 40%;
+    font-size: calc(1vw + 1rem);
+    text-align: center;
+}
+
+.sx-section > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sx-section input{
+    width: 70%;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 30px;
+    font-size: calc(.5vw + .5rem);
+    border: none;
+    outline: none;
+    box-shadow: 0px 10px 8px -10px #cbc8d1;
+    background-color: #fffffe;
+    transition: background .3s;
+}
+
+.sx-section input:hover,
+.sx-section input:focus{
+    background-color: #d9d4e7;
+}
+
+.sx-section h1{
+    font-size: calc(1.8vw + 1.8rem);
+}
+/* DX SECTION */
+.dx-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 60%;
+    font-size: calc(.8vw + .8rem);
+}
+
+.foglio{
+    padding: 30px 80px;
+    min-height: 80vh;
+    width: 70%;
+    background-color: #fffffe;
+    opacity: 0.8;
+}
+
+.foglio > h2{
+    text-align: center;
+}
+
+.foglio ul li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #d9d4e7;
+}
+
+.foglio ul li span{
+    cursor: pointer;
+}
+
+.foglio ul li i{
+    cursor: pointer;
+}
+
+
+
