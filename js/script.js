@@ -37,11 +37,42 @@ $(document).ready(function () {
         var templateClone = template.clone();
         templateClone.find("span").text(items[i].text);
         lista.append(templateClone);
-        console.log(i);
     };
+
+    input.keyup(function(event){
+        // console.log(event.which);
+        // key id enter = 13 
+        if(event.which === 13){
+            var newItem = input.val().trim();
+            newItem = capitalize(newItem);
+            input.val("");
+            console.log(newItem);
+
+            // inserimento input in lista
+            var templateClone = template.clone();
+            templateClone.find("span").text(newItem);
+            lista.append(templateClone);
+        }
+    })
+
     
 
 
 
     // fine doc ready 
 });
+
+/************************************************
+ * FUNCTIONS
+ ************************************************
+ */
+
+ /**
+ * CAPITALIZE
+ * @param {string} string // stringa su cui applicare il capitalize
+ * @returns // string;
+ */
+ function capitalize(string){
+    var newString = string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+    return newString;
+ }
