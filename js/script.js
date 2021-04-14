@@ -65,9 +65,10 @@ $(document).ready(function () {
         $(this).parent("li").remove();
     })
 
-    
-
-
+    // complete toggle
+    $("body").on("click", ".dx-section ul li span",function(){
+        $(this).toggleClass("complete");
+    })
 
     // fine doc ready 
 });

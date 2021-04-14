@@ -79,7 +79,8 @@ main{
 
 .foglio{
     padding: 30px 80px;
-    min-height: 80vh;
+    height: 80vh;
+    overflow: auto;
     width: 70%;
     background-color: #fffffe;
     opacity: 0.8;
@@ -97,12 +98,15 @@ main{
     border-bottom: 1px solid #d9d4e7;
 }
 
+.foglio ul li i,
 .foglio ul li span{
     cursor: pointer;
+    transition: color .3s;
 }
 
-.foglio ul li i{
-    cursor: pointer;
+.foglio ul li i:hover,
+.foglio ul li span:hover{
+    color: #faacb0;
 }
 
 
