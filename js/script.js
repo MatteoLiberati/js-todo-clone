@@ -37,8 +37,13 @@ $(document).ready(function () {
         var templateClone = template.clone();
         templateClone.find("span").text(items[i].text);
         lista.append(templateClone);
-    };
 
+        // complete item
+        if(items[i].complete == true){
+           templateClone.find("span").addClass("complete");
+        };
+    };
+        
     input.keyup(function(event){
         // console.log(event.which);
         // key id enter = 13 
